@@ -1,4 +1,34 @@
+import { User } from "../types/User";
+import { useState, FormEvent } from "react";
+import { validate } from "../utils/validate";
+
+
 const Forms = () => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [agree, setAgree] = useState(false);
+
+    const [errors, setErrors] = useState<User | null>(null);
+
+    const handleSubmit = (e: FormEvent) => {
+        e.preventDefault();
+
+        const data: User = {
+            name,
+            email,
+            agree,
+        }
+
+        const validateErrors = validate(data);
+
+        if(Object.keys(validateErrors).length > 0) {
+            alert("Tem erros!");
+            return;
+        }
+            
+        alert("Teste");
+    };
+
     return (
         <form className="flex flex-col gap-3">
             <div className="flex flex-col">
