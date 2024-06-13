@@ -1,34 +1,40 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# Formulário de Newsletter utilizando React.js, TypeScript e Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um simples projeto de formulário de newsletter desenvolvido com React.js, TypeScript e Tailwind CSS. O projeto permite que os usuários se inscrevam em uma newsletter fornecendo seu nome, e-mail e concordando com os termos.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React.js**: Uma biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Um superset de JavaScript que adiciona tipagem estática opcional.
+- **Tailwind CSS**: Um framework CSS utilitário para construção de interfaces de usuário.
 
-## Expanding the ESLint configuration
+## Pré-requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js e npm instalados na sua máquina.
 
-- Configure the top-level `parserOptions` property like this:
+## Como Executar o Projeto
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clone este repositório para sua máquina local:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-=======
-# newsletter_react
->>>>>>> main
+    ```bash
+    git clone https://github.com/gigigabytes/newsletter_react.git
+    ```
+
+2. Navegue até o diretório do projeto:
+
+    ```bash
+    cd newsletter_react
+    ```
+
+3. Instale as dependências do projeto:
+
+    ```bash
+    npm install
+    ```
+
+4. Inicie o servidor de desenvolvimento:
+
+    ```bash
+    npm run dev
+    ```
+
