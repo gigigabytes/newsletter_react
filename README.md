@@ -8,9 +8,12 @@ Este é um simples projeto de formulário de newsletter desenvolvido com React.j
 - **TypeScript**: Um superset de JavaScript que adiciona tipagem estática opcional.
 - **Tailwind CSS**: Um framework CSS utilitário para construção de interfaces de usuário.
 
+![Newsletter forms](newsletterform.png)
+
 ## Pré-requisitos
 
 - Node.js e npm instalados na sua máquina.
+
 
 ## Como Executar o Projeto
 
