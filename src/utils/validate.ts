@@ -7,7 +7,7 @@ type Error = {
 export const validate = (data: User) => {
    const errors: Error = {};
 
-    if (!data.name){
+    if (!data.name) {
         errors["name"] = "Nome é obrigatório";
     }
 

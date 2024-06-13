@@ -21,12 +21,14 @@ const Forms = () => {
 
         const validateErrors = validate(data);
 
+        console.log(data, validateErrors);
+
         if(Object.keys(validateErrors).length > 0) {
             alert("Tem erros!");
             return;
         }
             
-        alert("Teste");
+        alert("Obrigado por se inscrever!");
     };
 
     return (
@@ -38,7 +40,7 @@ const Forms = () => {
                 <input
                     type="text"
                     placeholder="Digite o seu nome"
-                    className="rounded-lg py-2 px-2 text-sm placeholder:text-sm placeholder:text-stone-400"
+                    className="rounded-lg py-2 px-2 text-sm placeholder:text-sm placeholder:text-stone-400" value={name}
                 />
             </div>
             <div className="flex flex-col">
@@ -47,8 +49,8 @@ const Forms = () => {
                 </label>
                 <input
                     type="email"
-                    placeholder="Digite o seu e-mail"
-                    className="rounded-lg py-2 px-2 text-sm placeholder:text-sm placeholder:text-stone-400"
+                    placeholder="Digite o seu e-mail" 
+                    className="rounded-lg py-2 px-2 text-sm placeholder:text-sm placeholder:text-stone-400" value={name}
                 />
             </div>
             <div className="flex flex-col">
