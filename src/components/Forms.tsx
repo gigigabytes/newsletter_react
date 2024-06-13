@@ -23,7 +23,7 @@ const Forms = () => {
         const validateErrors = validate(data);
 
         if (Object.keys(validateErrors).length > 0) {
-            setErrors(validateErrors);
+            setErrors(validateErrors as User);
             return;
         }
 
